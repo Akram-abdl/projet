@@ -91,8 +91,5 @@ if(!empty($liste_users)){
 
 ?>
 
-<br>
-<a href='deconnexion.php'>Se déconnecter</a>
-
 </body>
 </html>
