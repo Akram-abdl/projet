@@ -9,11 +9,11 @@
     $ad = "admin";
     $comp = "company";
     if ($_SESSION["status"] == $ad){
-    header('Location: http://localhost:8080/cours/projet/admins.php');
+    header('Location: http://localhost:8080/projet/admins.php');
     exit;
     }
     if ($_SESSION["status"] == $comp){
-    header('Location: http://localhost:8080/cours/projet/company.php');
+    header('Location: http://localhost:8080/projet/company.php');
     exit;
     
     }

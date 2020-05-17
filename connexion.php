@@ -25,20 +25,20 @@ if(isset($_POST["nom"]) && isset($_POST["prenom"])){
 
     $query->execute();
     if ($_POST["status"] == $ad){
-    header('Location: http://localhost:8080/cours/projet/admins.php');
+    header('Location: http://localhost:8080/projet/admins.php');
     exit;
     }
     if ($_POST["status"] == $can){
-    header('Location: http://localhost:8080/cours/projet/users.php');
+    header('Location: http://localhost:8080/projet/users.php');
     exit;
     }
     if ($_POST["status"] == $comp){
-    header('Location: http://localhost:8080/cours/projet/company.php');
+    header('Location: http://localhost:8080/projet/company.php');
     exit;
     
     }
 }else{
-    header('Location: http://localhost:8080/cours/projet/index.php');
+    header('Location: http://localhost:8080/projet/index.php');
     exit;
 }
 ?>

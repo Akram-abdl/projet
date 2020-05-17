@@ -1,0 +1,185 @@
+
+
+
+
+
+form {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+#container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.centertext{
+    text-align: center;
+}
+
+
+
+
+/* 
+
+
+        MENU
+
+
+*/
+
+
+
+ul {
+width: 1200px;
+margin: 40px auto;
+text-align: center;
+font-size: 18px;
+
+}
+
+
+
+ul li{
+list-style:none;
+display:inline-block;
+padding:15px;
+}
+
+@font-face {
+font-family: "Open Sans";
+src: local("OpenSans-Regular.ttf"),
+    local("OpenSans Regular.ttf"),
+    local("OpenSansRegular.ttf"),
+    url(font/Open_Sans/OpenSans-Regular.ttf) format("truetype");
+    font-weight: normal;
+}
+
+body{
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 15px;
+    width: 1200px;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+.subsline{
+display: inline-block;
+font-family: "Open Sans";
+font-size: 15px;
+color: #7E7E7E;
+margin-top: 80px;
+position: relative;
+left: 50px;
+bottom: 15px;
+}
+
+
+/* 
+
+
+
+
+    ANIMATIONS
+
+
+
+
+
+
+*/
+
+
+
+
+
+a{
+color: #B4B5BA;
+text-decoration:none;
+position:relative;
+padding:6px 0;
+-webkit-transition: all 0.8s;
+-o-transition: all 0.8s;
+transition: all 0.8s;
+}    
+a:after{
+content:'';
+width:0%;
+margin-left:50%;
+height:2px;
+bottom:0;
+left:0;
+-webkit-border-radius: 40%;
+-moz-border-radius: 40%;
+border-radius:40%;
+-webkit-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition:all 0.5s;
+position:absolute;
+-webkit-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition:all 0.5s;
+}
+a:hover:after {
+background-color: #6C6D74;
+width:60%;
+margin-left:20%;
+-moz-box-shadow: 0px 0px 10px #6C6D74;
+-webkit-box-shadow: 0px 0px 10px #6C6D74;
+-o-box-shadow: 0px 0px 10px #6C6D74;
+box-shadow:0px 0px 10px #6C6D74;
+color: #6C6D74;
+}
+
+/* Pulse Effect */
+
+
+/*tweaking done to inc_slow scale: 1,1 -> 1,05 */
+
+
+.inc_slow:hover{   
+    -webkit-transform:scale(1.05);
+}
+
+
+.inc_slow{ 
+    -webkit-transition: all 1s ease;
+}
+
+
+
+
+.inc_fast:hover{   
+    -webkit-transform:scale(1.5);
+}
+
+
+.inc_fast{ 
+    -webkit-transition: all 0.5s ease;
+}
+
+
+
+/*
+
+
+        ANIMATION SECTION ENDING
+
+
+*/
+
+
+
+/*Hover fix */
+
+a:hover{
+    color: #6C6D74;
+}

@@ -54,28 +54,65 @@ if(isset($_POST['prenom'])) {
         'status'=> $statusp,
     ));
 ?>
-    <p>Modifications effectuée</p>
+    
     <!DOCTYPE html>
         <html>
         <head>
-        <title>List User</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+
+            <link href="style.css" rel="stylesheet" type="text/css" />
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+            <title>Profil de <?php echo "$prenom";?></title>
         </head>
 
         <body>
-        <h1>Ma page de SESSION</h1>
+        <div id="header">
+
+                
+                <hr>
+                <div>
+                    <ul id="menu">
+                        <li class="inc_fast"><a href="index.php">HOME</a></li>
+                        <li class="inc_fast"><a href="deconnexion.php">Se déconnecter</a></li>
+                    </ul>
+                </div>
 
 
-        <table>
+
+
+
+        </div>
+        <br>
+        <h1 class ='centertext'>Ma page de SESSION</h1>
+        <br>
+
+
+        <table class = 'center'>
             <tr>
                 <td> L'utilsateur est un: <?php echo "$status";?> </td>
+            </tr>
+            <tr>
+                <br>
                 <td> Prenom de utilisateur: <?php echo "$prenom";?> </td>
+            </tr>
+            <tr>
+                <br>
                 <td> Nom de utilisateur: <?php echo "$nom"; ?></td>
+            </tr>
+            <tr>
+                <br>
                 <td> Age de utilisateur: <?php echo "$age"; ?></td>
-                <td> Email de utilisateur: <?php echo "$email"; ?> </td>
+            </tr>
+            <tr>
+                <br>
+                <td> Email de utilisateur: <?php echo "$email"; ?> </td> 
             </tr>
         </table>
-
-        <h3> Modifier information </h3>
+        <br>
+        <h3 class = 'centertext'> Modifier information </h3>
+        <br>
         <form action='' method="post">
             <input type='text' name='nom' placeholder = <?php echo"$nom"?> />
             <br>
@@ -85,7 +122,7 @@ if(isset($_POST['prenom'])) {
             <br>
             <input type='text' name='email' placeholder = <?php echo"$email"?> />
             <br>
-            <input type='text' name='password' placeholder = <?php echo"$password"?> />
+            <input type='password' name='password' placeholder = <?php echo"$password"?> />
             <br>
             <label for='status'>Choisir un status</label>
 
@@ -98,7 +135,6 @@ if(isset($_POST['prenom'])) {
             </select>
             <br>
             <button type='submit'>Envoyer</button>
-        <a href='index.php'>Home</a>
         </form>
         </body>
         </html>
@@ -111,24 +147,60 @@ if(isset($_POST['prenom'])) {
         <!DOCTYPE html>
         <html>
         <head>
-        <title>List User</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+
+            <link href="style.css" rel="stylesheet" type="text/css" />
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+            <title>Profil de <?php echo "$prenom";?></title>
         </head>
 
         <body>
-        <h1>Ma page de SESSION</h1>
+        <div id="header">
+
+                
+                <hr>
+                <div>
+                    <ul id="menu">
+                        <li class="inc_fast"><a href="index.php">HOME</a></li>
+                        <li class="inc_fast"><a href="deconnexion.php">Se déconnecter</a></li>
+                    </ul>
+                </div>
 
 
-        <table>
+
+
+
+        </div>
+        <h1 class ='centertext'>Ma page de SESSION</h1>
+
+
+        <table class = 'center'>
             <tr>
                 <td> L'utilsateur est un: <?php echo "$status";?> </td>
+            </tr>
+            <tr>
+                <br>
                 <td> Prenom de utilisateur: <?php echo "$prenom";?> </td>
+            </tr>
+            <tr>
+                <br>
                 <td> Nom de utilisateur: <?php echo "$nom"; ?></td>
+            </tr>
+            <tr>
+                <br>
                 <td> Age de utilisateur: <?php echo "$age"; ?></td>
-                <td> Email de utilisateur: <?php echo "$email"; ?> </td>
+            </tr>
+            <tr>
+                <br>
+                <td> Email de utilisateur: <?php echo "$email"; ?> </td> 
             </tr>
         </table>
+        <br>
 
-        <h3> Modifier information </h3>
+        <h3 class = 'centertext'> Modifier information </h3>
+        <br>
         <form action='' method="post">
             <input type='text' name='nom' placeholder = <?php echo"$nom"?> />
             <br>
@@ -138,7 +210,7 @@ if(isset($_POST['prenom'])) {
             <br>
             <input type='text' name='email' placeholder = <?php echo"$email"?> />
             <br>
-            <input type='text' name='password' placeholder = <?php echo"$password"?> />
+            <input type='password' name='password' placeholder = <?php echo"$password"?> />
             <br>
             <label for='status'>Choisir un status</label>
 
@@ -152,7 +224,7 @@ if(isset($_POST['prenom'])) {
             <br>
             <button type='submit'>Envoyer</button>
         
-            <a href='index.php'>Home</a>
+          
         </form>
         </body>
         </html>

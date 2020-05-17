@@ -3,12 +3,9 @@ $database_host = 'localhost';
 $database_port = '3306';
 $database_dbname = 'projet';
 $database_user = 'root';
-// $database_password = 'root';
+
 $database_charset = 'UTF8';
-// $database_options = [
-//     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-//     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-// ];
+
 
 $pdo = new PDO(
     'mysql:host=' . $database_host .
@@ -16,7 +13,7 @@ $pdo = new PDO(
     ';dbname=' . $database_dbname .
     ';charset=' . $database_charset,
     $database_user,
-    // $database_options
+    
 );
 
 ?>
